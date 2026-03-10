@@ -31,21 +31,6 @@ pageextension 50121 "Purch Inv Subf Ext" extends "Purch. Invoice Subform"
 {
     layout
     {
-        modify(Quantity)
-        {
-            trigger OnValidate()
-            begin
-                RefreshTotalsView(true);
-            end;
-        }
-
-        modify("Direct Unit Cost")
-        {
-            trigger OnValidate()
-            begin
-                RefreshTotalsView(true);
-            end;
-        }
     }
 
     trigger OnInsertRecord(BelowxRec: Boolean): Boolean

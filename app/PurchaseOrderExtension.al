@@ -31,21 +31,6 @@ pageextension 50123 "Purch Ord Subf Ext" extends "Purchase Order Subform"
 {
     layout
     {
-        modify(Quantity)
-        {
-            trigger OnValidate()
-            begin
-                RefreshTotalsView(true);
-            end;
-        }
-
-        modify("Direct Unit Cost")
-        {
-            trigger OnValidate()
-            begin
-                RefreshTotalsView(true);
-            end;
-        }
     }
 
     trigger OnInsertRecord(BelowxRec: Boolean): Boolean
