@@ -1,0 +1,29 @@
+{
+  "id": "2fcd9df3-5526-47ef-9810-4e67d2ad36f7",
+  "name": "Auto Update Total Purchase Orders",
+  "publisher": "InSyncSupplyLtd",
+  "version": "1.0.0.0",
+  "brief": "Shows a live purchase total in a FactBox.",
+  "description": "Adds a Line Totals Check FactBox to purchase orders and purchase invoices and shows a live total excluding tax.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "27.0.0.0",
+  "application": "27.4.0.0",
+  "runtime": "16.0",
+  "idRanges": [
+    {
+      "from": 50110,
+      "to": 50129
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  }
+}

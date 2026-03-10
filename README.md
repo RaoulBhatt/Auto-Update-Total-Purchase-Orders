@@ -1,11 +1,21 @@
-# AL-Go Per Tenant Extension Template
+# Auto Update Total Purchase Orders
 
-This template repository can be used for managing Per-tenant Extensions (PTEs) for Business Central.
+Business Central per-tenant extension managed with AL-Go for GitHub.
 
-Please go to https://aka.ms/AL-Go to learn more.
+## What It Does
 
-## Contributing
+This app adds a `Line Totals Check` FactBox to:
 
-Please read [this](https://github.com/microsoft/AL-Go/blob/main/Scenarios/Contribute.md) description on how to contribute to AL-Go for GitHub.
+- Purchase Order
+- Purchase Invoice
 
-We do not accept Pull Requests on the template repository directly.
+The FactBox shows:
+
+- `Live Total Excl Tax`
+
+The value is calculated from `Purchase Line."Line Amount"` for the current document and is intended to refresh when:
+
+- lines are added
+- lines are deleted
+- `Quantity` changes
+- `Direct Unit Cost` changes
