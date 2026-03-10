@@ -21,6 +21,13 @@ page 50210 "Purch Ln Totals FB"
                     AutoFormatType = 1;
                     ToolTip = 'Shows the summed line amount for the current purchase document.';
                 }
+                field(LiveQtyToInvoiceTotal; LiveQtyToInvoiceTotal)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Live Qty. to Invoice Excl Tax';
+                    AutoFormatType = 1;
+                    ToolTip = 'Shows the total excluding tax based on Qty. to Invoice for the current purchase document.';
+                }
             }
         }
     }
@@ -40,6 +47,7 @@ page 50210 "Purch Ln Totals FB"
     local procedure RefreshTotals()
     begin
         Clear(LiveTotal);
+        Clear(LiveQtyToInvoiceTotal);
 
         if Rec."No." = '' then
             exit;
@@ -47,10 +55,12 @@ page 50210 "Purch Ln Totals FB"
         TotalsCalc.UpdateTotals(
           Rec."Document Type",
           Rec."No.",
-          LiveTotal);
+          LiveTotal,
+          LiveQtyToInvoiceTotal);
     end;
 
     var
         TotalsCalc: Codeunit "Purch Totals Calc";
         LiveTotal: Decimal;
+        LiveQtyToInvoiceTotal: Decimal;
 }
