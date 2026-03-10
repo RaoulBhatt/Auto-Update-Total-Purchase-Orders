@@ -1,4 +1,4 @@
-pageextension 50122 "Purch Ord Totals Ext" extends "Purchase Order"
+pageextension 50222 "Purch Ord Totals Ext" extends "Purchase Order"
 {
     layout
     {
@@ -27,7 +27,7 @@ pageextension 50122 "Purch Ord Totals Ext" extends "Purchase Order"
     end;
 }
 
-pageextension 50123 "Purch Ord Subf Ext" extends "Purchase Order Subform"
+pageextension 50223 "Purch Ord Subf Ext" extends "Purchase Order Subform"
 {
     layout
     {

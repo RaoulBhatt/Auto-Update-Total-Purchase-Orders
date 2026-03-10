@@ -1,4 +1,4 @@
-pageextension 50120 "Purch Inv Totals Ext" extends "Purchase Invoice"
+pageextension 50220 "Purch Inv Totals Ext" extends "Purchase Invoice"
 {
     layout
     {
@@ -27,7 +27,7 @@ pageextension 50120 "Purch Inv Totals Ext" extends "Purchase Invoice"
     end;
 }
 
-pageextension 50121 "Purch Inv Subf Ext" extends "Purch. Invoice Subform"
+pageextension 50221 "Purch Inv Subf Ext" extends "Purch. Invoice Subform"
 {
     layout
     {

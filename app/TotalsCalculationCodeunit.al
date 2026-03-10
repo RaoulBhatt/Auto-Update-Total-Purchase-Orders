@@ -1,4 +1,4 @@
-codeunit 50111 "Purch Totals Calc"
+codeunit 50211 "Purch Totals Calc"
 {
     procedure UpdateTotals(
         DocumentType: Enum "Purchase Document Type";

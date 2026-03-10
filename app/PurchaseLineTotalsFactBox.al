@@ -1,4 +1,4 @@
-page 50110 "Purch Ln Totals FB"
+page 50210 "Purch Ln Totals FB"
 {
     PageType = CardPart;
     SourceTable = "Purchase Header";
